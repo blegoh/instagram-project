@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/bootstrap-social.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -50,8 +51,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ url('/login') }}">Login</a></li>
-                            <li><a href="{{ url('/register') }}">Register</a></li>
+                            <li><a href="{{ url('/login/instagram') }}">Login Instagram</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -83,5 +83,6 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script src="https://use.fontawesome.com/a457fa5cb0.js"></script>
 </body>
 </html>
