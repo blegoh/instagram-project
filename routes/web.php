@@ -15,7 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
 Route::get('login/instagram', 'Auth\LoginController@redirectToProvider');
 Route::get('login/instagram/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('/home', 'HomeController@index');
